@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--This part is hidden to user!-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Flux Bank Website"> <!--Define a description of your web page-->
+    <meta name="keywords" content="Flux bank, flexibility, bank, best bank, best customer service">
+    <meta name="author" content="Seham Hakim Ahmed Othman"> <!--Define the author of a page-->
+    <meta http-equiv="refresh" content="10"> <!--Refresh html document every 10 seconds to see updates on the web page as fast as possible-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This will set the viewport of my page-->
+    <title>Flux Bank</title> <!--Web tap title-->
+    <link href="style.css" rel="stylesheet"  /> <!--Link the css file to give html styles!-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" >
+</head>
+<body>
+    <header> <!--Header-->
+        <nav class="navigation"> <!-- buttons will take me somewhere else-->
+            <!-- <a><i class="fa-brands fa-searchengin"></i></a> -->
+             <!--Those are buttons for header part-->
+            <a href="#product-and-service-fees">Product and Service Fees</a>
+            <a href="#our-bank">our bank</a>
+            <a href="#inverstor-relations" >Inverstor Relations</a>
+            <a href="#digital-banking"> Digital Banking</a>
+        </nav>
+    </header>
+    <!--Another menu which the Logo of the bank and the bank name will be shown of left most, and another navigation menu of right most, I seperated them by using flex space between the two div's ! -->
+    <div class="upper-menu">
+        <div class="logo-section">
+            <img src="images/appLogo.png" alt="appLogo" class="logo-img">
+            <a href="#" class="logo">FluxBank</a>
+        </div>
+        <nav class="navigation" id="n-upper"> <!-- buttons will take me somewhere else-->
+            <a href="#retail">Retail</a>
+            <a href="#commercial">Commercial</a>
+            <a href="#corporate" >Corporate</a>
+            <a href="#" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" id="internet-bancking-a">Internet Banking</a>
+        </nav>
+    </div>
+    <!-- Main page start-->
+    <section class="main">
+        <!--First section of the main page which will be the menu upper section-->
+        <div class="menu-up"> 
+            <!--I divided the upper section into 2 sections so I can separate them by using flex space around -->
+            <div id="left-menu-up"> <!--First div -->
+                <!--I provided the user icon, name, settings icon -->
+                <a href="#"><i class="fa-solid fa-user-pen"></i></a>
+                <span id="username">Seham Hakim<br>Ahmed Othman.</span>
+                <a href="#"><i class="fa-solid fa-gear"></i></a>
+            </div>
+                
+            <div id="right-menu-up"> <!--Second div -->
+                <!-- In this section, I provided : A sentence which will give a brief info about FLUX BANK JOb-->
+                <p id="menu1-p">
+                    Money is your time,time is our<br>money.</p>
+            </div>
+        </div>
+
+        <div class="main-container"> <!--Main Container -->
+            <!-- I divided the main container into 3 sections : menu left, menu middle, menu right, menu down. so I can make them next to each other column-wise! by using flex, flex direction: column-->
+
+             <!-- 1- Menu left section-->
+            <div class="menu-left">
+                <!-- I made each hyper link in a separate division element, so I can make its border, but still have the same class! -->
+               
+                <div class="menu-left-a-s">
+                    <a href="#" id="myAccounts">MY ACCOUNTS</a>
+                </div>
+                <div class="menu-left-a-s">
+                    <a href="#"><i class="fa-solid fa-turkish-lira-sign"></i></a>
+                    <span> 130K</span>
+                </div>
+                <div class="menu-left-a-s">
+                    <a href="#"><i class="fa-solid fa-dollar-sign"></i></a>
+                    <span>12.8</span>
+                </div>
+                <div class="menu-left-a-s">
+                    <a href="#"><i class="fa-solid fa-euro-sign"></i></a>
+                    <span> 135M</span>
+                </div>
+                <div class="menu-left-a-s">
+                    <a href="#"><i class="fa-solid fa-sterling-sign"></i></a>
+                    <span> 30K</span>
+                </div>
+                <div class="menu-left-a-s">
+                    <a href="#"><i class="fa-solid fa-yen-sign"></i></a>
+                    <span> 12K</span>
+                </div>
+                <div class="menu-left-a-s">  
+                    <a href="#"><i class="fa-solid fa-rupee-sign"></i></a>
+                    <span> 300K</span>
+                </div>
+            </div>
+            <!-- 2- Menu middle section-->
+            <div class="menu-middle">
+                <!-- I made each part of paragraph in a separate division element, so I can style them separately -->
+                <div class="menu-middle-up1">
+                    <h2>WELCOME <span id="menu-up-hello-name">SEHAM </span>!</h2> <!--put my name inside a span to style it -->
+                </div>
+                <div class="menu-middle-downside">
+                    <div id="features-ad">
+                        <h3>Here is the new features we have!</h3>
+                    </div>
+                    <div class="menu-middle-down0">
+                        <h3>Withdraw and Deposit Money</h3>
+                        <p> By using Flux Bank QR Code!</p>
+                        <a href="#">For more informations</a>
+                    </div>
+                    <div class="menu-middle-down1">
+                        <h3>Flux Bank</h3>
+                        <p> Has Time saving Transactions for your company!</p>
+                        <a href="#">For more informations</a>
+                    </div>
+                    <div class="menu-middle-down2">
+                        <h3>Western Union</h3>
+                        <p>Transfers are on Flux Bank Mobile and Internet Banking!</p>
+                        <a href="#">For more informations</a>
+                    </div>
+                    <div class="menu-middle-down-right">
+                        <a href="#">Call us!<i class="fa-solid fa-phone-flip"></i></a> <!--Call customer service!-->
+                    </div>
+                </div> 
+            </div>
+            <!-- 3- Menu right section-->
+             <!--I devided the right section into 3 sections : right up, right middle, and finally right down, to make borders for each div element! and each div will have elements inside it! -->
+            <div class="menu-right">
+                <div class="menu-right-up">
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                    <br>
+                    <h3> Miss.Seham Othman</h3>
+                    <br>
+                    <a href="#">Show my information</a>
+                </div>
+                <div class="menu-right-middle">
+                    <h4>my main TL Account wallet : </h4>
+                    <hr id="horizontal-middle-right">
+                    <br>
+                    <a href="#"><i class="fa-solid fa-wallet"></i> 130K</a>
+                </div>
+                <div class="menu-right-down">
+                    <h4>My Recent Activities</h4>
+                    <br>
+                    <div class="account-activities">
+                        <div class="square">
+                            <h5>28-10-2024 : 20K sent to you from Judi</h5>
+                        </div>
+                        <div class="square">
+                            <h5>27-10-2024 :Transfer 500K to Judi</h5>
+                        </div>
+                        <div class="square">
+                            <h5>26-10-2024 :Transfer Rent to Elit Apart</h5>
+                        </div>
+                        <div class="square">
+                            <h5>25-10-2024 :Transfer 500K to Alaa</h5>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div> <!-- 4-Menu down section-->
+        
+        
+
+    </section>
+<!--Finally footer part and add copy right text, i styled it at css file , changed the color, background, align it into center -->
+    <footer>
+        <div class="menu-down">
+            <!--I devided the down section into 3 sections which they will be 3 squares! and they all have the same class to prevent repetition!! -->
+            <div class="menu-down-square">
+                <a href="#" class="menu-down-squares-title">Contact-us</a>
+                <br>
+                <a href="#">Contact form</a><br>
+                <a href="#">Call us</a>
+            </div>
+            <div class="menu-down-square">
+                <a href="#" class="menu-down-squares-title">FAQ</a>
+                <br>
+                <a href="#">Help</a><br>
+                <a href="#">Legal Notice</a>
+            </div>
+            <div class="menu-down-square">
+                <a href="#" class="menu-down-squares-title">products</a>
+                <br>
+                <a href="#">Western Union</a><br>
+                <a href="#">SWIFT</a>
+            </div>
+
+        </div>
+        &copy; 2024-FLUX BANK COPY RIGHT
+    </footer>
+    
+</body>
+
+</html>

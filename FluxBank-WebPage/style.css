@@ -1,0 +1,579 @@
+/*Imported type of fonts to apply to all of my sections and elements from Google font!*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{ /* "*" means select all elements*/
+    font-family: 'Poppins', sans-serif; /*Type of font*/
+    /*At the start do not make any margins and paddings*/
+    padding: 0;
+    box-sizing: border-box; /*to prevent overflow! */
+    scroll-behavior: smooth; /*make scroll smother*/
+
+}
+body{  /*Element selector*/
+    /*To make spaces from up:20 right:20 down:20 left:20, clock-wise this is short-hand */
+    margin: 20px; /* Top, right, bottom, left */
+}
+/*STYLING HEADER */
+header{  /*Element selector*/
+    /*Styling header menu*/
+    background-color: rgb(36, 36, 132); /*Background color of this section*/
+    width:100%; /*Means it will take all width!*/
+    z-index: 999; /*when user scroll the header will always be up nothing becomes up of it! GIVE IT A LARGE NUMBER*/
+    min-height: 2.5em; /*If user exceed this min it will be increased based on user's need*/
+    display: flex; /*to make items next to each other row-wise*/
+    justify-content: flex-end; /*i put items at flex-end means it will start at the end of the row!*/
+    align-items:center; /*put items on center*/
+    margin-bottom: 10px; /*space down between header part and next menu!*/
+    padding: 10px; /*to not make text or hyper links sticks to the ends!*/
+    border: 2px solid #004AAD; /**/
+
+
+}
+.navigation a{  /*item selection inside a specific class */
+    text-decoration: none; /*to remove the underline which is by default exist under a hyperlink*/
+    color: rgb(255, 255, 255); /*color of hyper links text!*/
+    font-size: 1.4; /*font- size*/
+    padding: 0 30px; /*to put spaces between the hyper-links from left and right!*/
+    
+    font-weight: 400; /*font-weight means how wide the font is */
+}
+.navigation a:hover{ /*Added a feature to change the color of hyper link when user put mouse on it*/
+    color: rgb(165, 165, 211);
+}
+
+/*STYLING UPPER MENU, WHICH COMES AFTER HEADER,
+ IT INCLUDES THE PICTURE OF FLUXBANK, THEN LOGO THEN HAVE A SPACE THEN HYPERLINKS:
+  RETAIL, COMMERCIAL, CORPORATE, SEARCH ICON, AND FINALLY Internet Banking */
+
+.upper-menu {  /*class selector*/
+    background-color: rgb(255, 255, 255); /*Background color of this section*/
+    display: flex; /*To putitems next to each other*/
+    justify-content: space-between;  /*Items will have space between them*/
+    align-items:center;
+    padding: 10px 20px; /*to not make hyper links and text stick to the ends!*/
+    border: 2px solid #004AAD; /*short-hand to border, first parameter is for width, then style, finally third parameter is for border color*/
+}
+
+/*Upper menu has a 2 inner sections : logo section , and navigation . I separated them by using flex, space between*/
+.logo-section {  /*Class selector*/
+    display: flex;
+    align-items: center;
+}
+.logo-img {  /*Class selector*/
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo{   /*Class selector*/
+    /*FluxBank*/
+    text-decoration: none; /*remove underline from hyper link*/
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #004AAD;
+    padding: 5px;
+    margin-right: 20px;
+}
+#n-upper a{  /* item selection which it has a specific Id */
+    /*style only hyper links which exist inside the item which its ip is : #n-upper*/
+    color: #004AAD; /*add a font color to hyper links*/
+    text-decoration: none; /*remove underline*/
+    font-size: 1em;
+    /*do padding to not make items stick to each other*/
+    padding: 0 30px;
+    font-weight: 700;
+}
+#search-icon { /*Id selector*/
+    border: 2px solid #004AAD;
+    padding: 5px;
+    display: inline-block;
+}
+
+#search-icon i { /*Id selector to specific item*/
+    color: #004AAD; /* Color of the icon */
+}
+#internet-bancking-a{ /*Id selector to specific item*/
+    border: 2px solid #193a64;
+    padding: 10px 20px;
+    background-color: #d9dcdf;
+    color: #2d3667;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#internet-bancking-a:hover {
+    background-color: #7f8ed6;
+    color: #004AAD;
+}
+
+/*STYLING MAIN SECTION , WHICH CONTAINS ALL THE PARTS !!*/
+
+.main{ /*class selector*/
+    /* Main page start */
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+}
+
+/*STYLING MENU-UP SECTION , WHICH CONTAINS USER NAME, SETTINGS, A PARAGRAPH !!*/
+
+.menu-up{ /*class selector*/
+    /*items will be next to each other, i used flex and to separate the two div's that i made, I used justify content space between!*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(175, 185, 221);
+    width: 100%;
+    padding:20px 30px;
+    color: rgb(31, 44, 54);
+    border: 2px solid #004AAD;
+}
+.menu-up a{ /* specific item selector inside a class called menu-up */
+    text-decoration: none;
+    color: rgb(24, 60, 96);
+    font-size: 2em;
+    padding: 0 30px; 
+    font-weight: 100;
+}
+.menu-up a:hover{  /*Added a feature to change the color of hyper link when user put mouse on it*/
+    color: rgb(161, 161, 184);
+
+}
+#username {
+    color: rgb(98, 99, 104);
+    text-decoration: underline;
+    text-decoration-color: rgb(98, 99, 104);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+}
+  
+#menu1-p {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+.main-container{ /*class selector*/
+    /*main page start here! they will be 3 columns on one single row next to each other!*/
+    display: flex;
+    flex-direction: row;
+}
+
+/*START STYLING MENU LEFT, WHICH INCLUDES:
+ CURRENCIES IN USER ACCOUNT AND ITS BALANCE IN EACH ONE.
+  USER CAN INTERACTION WITH THE BUTTONS.
+   WHEN USER PUT MOUSE ON THEM THEY WILL GET BIGGER*/
+
+.menu-left{  /*class selector*/
+    /*it will be displayed columns under each other as goal */
+    /* flex-direction: column; */
+    /* align-items: center; to  center items! */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#0a428a;
+    padding: 80px 30px;
+    width: 100%; /*to take all possible width*/
+    border: 1px solid #004AAD;
+
+
+}
+.menu-left .menu-left-a-s{  /*hyper link (a) selector inside the menu-left-a-s which is inside menu-left div*/
+    
+    width: 100%;
+    border: 1px solid #e3dcdc;
+    border-radius: 5%; /*to not make borders sharp*/
+    padding: 15px 20px; /*add paddings to up-down, left-right*/
+    text-decoration: none; /*remove underline under each hyper-link*/
+    margin: 8px 0; /*make outer margin*/
+    background-color: rgb(255, 255, 255);
+    color:#004AAD;
+
+}
+.menu-left .menu-left-a-s a{  /*hyper link (a) selector inside the menu-left-a-s which is inside menu-left div*/
+    text-decoration: none; /*remove underline under each hyper-link*/
+    margin-right: 10px;
+    transition: 0.7s ease; /*in how much time is the square or effect is going to apply to the left menu sqaures*/
+    color:#004AAD;
+
+
+}
+.menu-left-a-s a:hover{ /*effect to make square getting bigger when user put mouse on them!*/
+    color: rgb(130, 162, 204);
+    transform: scale(1.1); 
+}
+
+/*START STYLING MENU MIDDLE, WHICH INCLUDES:
+ HELLO TO USER, NEW FEATURES THE BANK HAVE, 
+ AND FINALLY IF USER STRUGGLE HE CAN CALL THE BANK BY CLICKING ON THE HYPER LINK! */
+
+.menu-middle { /*class selector*/
+    /*the goal is to display them under each other thats why i used flex direction column*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /*to take all possible width!*/
+    padding: 50px; /* Adjust padding as needed */
+    border: 1px solid #19212b; /*border*/
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-middle-up1 {/*class selector*/
+    /*style upper section of middle menu!*/
+    width: 100%;
+    border-bottom: 1px solid #004AAD; /* Add a bottom border */
+    padding-bottom: 10px; /*to not make them stick under each other! added a padding-bottom to make a space*/
+    text-align: center;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Include padding in the element's total width */
+    /* margin-bottom: 50px; !!! NOT USED, NO NEED  !!!*/
+    /* padding-left: 0;
+    padding-right: 0; */
+    
+}
+.menu-middle-downside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+.menu-middle-down0,
+.menu-middle-down1,
+.menu-middle-down2 { /*multiple classes selector!*/
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px; /*to separate div's !*/
+}
+.menu-middle  a{ /*an item selector(hyper link)! which is inside the class menu-middle!*/
+    text-decoration: none; /*remove underlines*/
+    width: 100 px;
+    padding: 10px; 
+    font-weight: 300;
+    color: #004AAD;
+}
+.menu-middle-down-right { /*class selector*/
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the right */
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+}
+.menu-middle-down-right a{ /*an item selector(hyper link)! which is inside the class menu-middle-down-right!*/
+    border: 2px solid #000000;
+    border-radius: 5%;
+    background-color: #9bbe9f;
+    font-size: 20px;
+    color: rgb(39, 79, 55);
+    text-decoration: none;
+    text-align: left;
+    padding: 5px;
+}
+
+
+#menu-up-hello-name{ /*id item selector, selecting item by its id*/
+    font-family: 2em;
+    color: #004AAD; /*color of font!*/
+    font-weight: 400;
+}
+#features-ad{ /*id item selector, selecting item by its id*/
+    text-align: center;
+    color: #23459b;
+    font-weight: 300;
+    margin-bottom: 40px;
+    border: 1px solid rgb(13, 28, 70);
+    border-radius: 5%;
+    padding: 30px;
+    background-color: #add1eb;
+}
+
+/*START STYLING MENU RIGHT, WHICH INCLUDE: 
+USER INFORMATION(JUST THE NAME IS SHOWN) IF THE USER WANT TO SHOW MORE INFOS,
+ THEY CAN CLICK ON "Show my information" HYPERLINK!, 
+ THEN MAIN ACCOUNT WALLET BALANCE WILL BE SHOWN, 
+ THEN FINALLY RECENT ACTIVITIES THAT THE USER MADE! */
+
+.menu-right{ /*class selector*/
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px 30px 40px;
+    width: 100%;
+    border: 1px solid #004AAD;
+    background-color: #0a428a;
+    transition: 0.7s ease;
+
+}
+.menu-right a:hover{ /*used hover to make squares bigger and have different color when user put mouse on it*/
+    color: rgb(130, 162, 204);
+    transform: scale(1.1);
+}
+.menu-right-up{ /*class selector*/
+    border: 1px solid #004AAD;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.menu-right-middle{ /*class selector*/
+    border: 1px solid #004AAD;
+    border-radius: 10%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.menu-right-middle a{ /*item selector which only exist inside menu-right-middle class!*/
+    display: inline-block; /* Ensures the link is treated as a block-level element */
+    font-size: 1.8em;
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    margin-top: 10px; /* Optional: adds space above the link */
+}
+#horizontal-middle-right{ /*id selector!*/
+    color: #3b5a80;
+    width: 100%;
+}
+.menu-right-down{  /*class selector*/
+    border: 1px solid #004AAD;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.account-activities{ /*class selector*/
+    display: flex;
+    flex-direction: column;
+    color: #23459b;
+}
+.square{ /*class selector*/
+    border: 2px solid #2d2c5b ;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+/* .menu-down-square a:hover{
+    color: rgb(133, 147, 166);
+} */
+
+/*START STYLING FOOTER*/
+
+footer{ /*Element selector*/
+    background-color: #13437e; /*Background color is blue!*/
+    text-align: center; /*make it at the center*/
+    padding: 10px; /* Add padding for spacing */
+    width: 100%; /* Ensure it takes up full width */
+    color: white; /* change text color  */
+}
+
+/*START STYLING MENU MOST DOWN IN FOOTER,
+ WHICH USER CAN CONTACT THE BANK, BY USING CONTACT FORM, OR CALL. 
+ NEXT FAQ SECTION WHICH INCLUDE: HELP LINK TO SHOW MOST ASKED QUESTIONS, AND LEGAL NOTICE TO SHOW ALL LEGAL NOTICES THAT USER CONFIRMED.
+  FINALLY BANKING PRODUCTS, WHICH INCLUDES THE PRODUCTS THAT THE BANK IS GIVING TO ITS CUSTOMERS SUCH AS :  WESTERN UNION, SWIFT, FX TRANSFER*/
+
+.menu-down{ /*class selector*/
+    /* background: #23459b; */
+    color: #2d2c5b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+.menu-down-square{ /*class selector*/
+    flex: 1; /*Makes all squares the same size */
+    border: 1px solid whitesmoke;
+    border-radius: 3%;
+    background-color: #dbe8f2;
+    align-items: center;
+    margin: 10px; /* Ensure spacing between squares */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+    max-width: calc(33.33% - 20px); /* Ensure the squares don't overflow */
+}
+.menu-down-squares-title{ /*class selector*/
+    color: #2d2c68; /* Sets the text color to a dark gray */
+    text-decoration: underline; /* Adds an underline to the hyperlink */
+    font-weight: 600;  /* Sets the font weight to bold */
+    font-size: 1.7 em;  /* Sets the font size to 1.7em (larger than the default font size) */
+
+}
+
+.menu-down-square a{ /*item selector which only exist inside menu-down-square class! */
+    text-decoration: none;
+    color: #2d2c5b;
+}
+.menu-down-squares-title a:hover{
+    color: gray;
+}
+
+
+/* For devices with width <= 1024px */
+@media only screen and (max-width: 1024px) {
+    .menu-left, .menu-middle, .menu-right, footer {
+        width: 100%;
+    }
+}
+
+/* Tablet view, width <= 768px */
+@media only screen and (max-width: 768px) {
+    header, .upper-menu, .menu-up {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+    .navigation a {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    .main-container {
+        flex-direction: column;
+    }
+    .menu-left, .menu-middle, .menu-right {
+        width: 100%;
+        padding: 20px;
+    }
+    .menu-down {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .menu-down-square {
+        width: 100%;
+        margin: 10px 5px;
+    }
+}
+
+/* Narrow screens, width <= 655px */
+@media only screen and (max-width: 655px) {
+    .menu-left {
+        flex-direction: column;
+        overflow-y: auto;
+        padding: 15px;
+        width: 100%;
+    }
+    .menu-left .menu-left-a-s a {
+        font-size: 0.9em;
+        padding: 10px;
+        transition: transform 0.3s ease;
+    }
+    .menu-middle, .menu-right, .menu-down {
+        width: 100%;
+        padding: 15px;
+    }
+    .menu-down-square {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* iPhone 14 Pro Max, width <= 434px */
+@media only screen and (max-width: 434px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        font-size: 0.5em;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .navigation a {
+        padding: 5px;
+        font-size: 1.8em;
+    }
+    .upper-menu {
+        display: inline-block;
+        align-items: flex-start;
+        font-size: 0.5em;
+        padding: 10px;
+        width: 100%;
+    }
+    .menu-up {
+        font-size: 0.5em;
+        padding: 10px;
+        width: 100%;
+    }
+    .main-container, .menu-middle, .menu-right {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    .menu-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-x: auto;
+        padding: 25px;
+        width: 100%;
+    }
+    .menu-down {
+        flex-direction: column;
+    }
+    .menu-down-square {
+        width: 100%;
+        margin: 10px 5px;
+        box-sizing: border-box;
+    }
+}
+
+/* Samsung S8 Mobile view, width <= 360px */
+@media only screen and (max-width: 360px) {
+    header {
+        flex-direction: row;
+        padding: 5px;
+        font-size: 0.2em;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .navigation a {
+        padding: 5px;
+        font-size: 1.8em;
+    }
+    .upper-menu {
+        display: inline-block;
+        align-items: flex-start;
+        font-size: 0.4em;
+        padding: 10px;
+        width: 100%;
+    }
+    .menu-up {
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 0.8em;
+    }
+    .main-container {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    .menu-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x: auto;
+        padding: 25px;
+        width: 100%;
+    }
+    .menu-middle, .menu-right {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    .menu-down {
+        flex-direction: column;
+        padding: 25px;
+        width: 100%;
+    }
+    .menu-down-square {
+        height: 120px;
+    }
+}
